@@ -1,0 +1,16 @@
+if SHIELD_BLACK_VELVET_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Black Velvet"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_BLACK_VELVET_LEFT || SHIELD_BLACK_VELVET_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

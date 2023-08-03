@@ -1,0 +1,12 @@
+file_format: "1"
+id: blackvelvet
+name: Blackvelvet
+type: shield
+url: https://github.com/dillonbheadley/zmk-config-black-velvet/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+siblings:
+  - blackvelvet_left
+  - blackvelvet_right
