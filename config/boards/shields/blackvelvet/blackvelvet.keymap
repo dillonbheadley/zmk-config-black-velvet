@@ -165,7 +165,7 @@
       
     symbols_layer {
       bindings = <
-        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
+        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &reset
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
                                     &kp LGUI  &kp LSFT          &trans  &kp ENTER 
