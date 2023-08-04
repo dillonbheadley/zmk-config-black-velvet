@@ -1,5 +1,5 @@
 config SHIELD_BLACK_VELVET_LEFT
-    def_bool $(shields_list_contains,black_velvet_left)
+    def_bool $(shields_list_contains,blackvelvet_left)
 
 config SHIELD_BLACK_VELVET_RIGHT
-    def_bool $(shields_list_contains,black_velvet_right)
+    def_bool $(shields_list_contains,blackvelvet_right)
