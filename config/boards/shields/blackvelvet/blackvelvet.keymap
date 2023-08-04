@@ -177,7 +177,7 @@
         &kp CAPS  &kp RALT  &key_repeat  &caps_word  &kp STAR       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
         &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp PLUS            &kp COLON  &kp N4  &kp N5  &kp N6  &kp ENTER 
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP              &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp DOT   
-                                        &trans  &trans              &kp N0 &kp BKSP
+                                        &mo MEDIA  &trans              &kp N0 &kp BKSP
       >;
     };
 
