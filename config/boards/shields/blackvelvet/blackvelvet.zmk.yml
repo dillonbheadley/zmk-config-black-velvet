@@ -4,7 +4,6 @@ name: Blackvelvet
 type: shield
 url: https://github.com/dillonbheadley/zmk-config-black-velvet/
 requires: [pro_micro]
-exposes: []
 features:
   - keys
 siblings:
