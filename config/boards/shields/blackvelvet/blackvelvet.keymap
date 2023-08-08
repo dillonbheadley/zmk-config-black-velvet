@@ -171,7 +171,7 @@
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
                                     &kp LGUI  &kp LSFT          &trans  &kp ENTER 
       >;
-      sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN'>;
+      sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
     };	
 
     number_layer {
