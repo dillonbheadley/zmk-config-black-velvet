@@ -134,7 +134,7 @@
         &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
               &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
       >;
-      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN>;
     };
 
     alt_layer {
