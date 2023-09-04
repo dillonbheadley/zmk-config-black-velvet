@@ -2,7 +2,7 @@
 
 &matrix1 {
     col-gpios
-        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN>
         ;
 };
 &matrix2 {
