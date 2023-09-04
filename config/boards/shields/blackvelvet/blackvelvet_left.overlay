@@ -1,0 +1,12 @@
+#include "blackvelvet.dtsi"
+
+&matrix1 {
+    col-gpios
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        ;
+};
+&matrix2 {
+    col-gpios
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        ;
+};
