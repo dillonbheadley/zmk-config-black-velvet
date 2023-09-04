@@ -31,6 +31,7 @@ RC(1,0) RC(1,1)
     };
 
     matrix1: kscan_matrix1 {
+        label = "Matrix 1"
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         row-gpios
@@ -40,6 +41,7 @@ RC(1,0) RC(1,1)
     };
 
     matrix2: kscan_matrix2 {
+        label = "Matrix 2"
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
         row-gpios
