@@ -38,12 +38,18 @@ RC(1,0) RC(1,1)
             = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
+        col-gpios
+            = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+            ;
     };
 
     matrix2: kscan_matrix2 {
         label = "Matrix 2";
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
+        col-gpios
+            = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+            ;
         row-gpios
             = <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
