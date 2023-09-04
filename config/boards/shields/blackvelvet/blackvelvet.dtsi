@@ -20,7 +20,7 @@ RC(1,0) RC(1,1)
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         rows = <2>;
-        columns = <2>;
+        columns = <1>;
 
         matrix1 {
             kscan = <&matrix1>;
