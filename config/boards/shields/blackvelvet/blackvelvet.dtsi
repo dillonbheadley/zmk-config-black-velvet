@@ -17,7 +17,7 @@ RC(1,0) RC(1,1)
     };
 
     kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
+        compatible = "zmk,kscan-composite";
         label = "KSCAN";
         rows = <2>;
         columns = <1>;
