@@ -20,7 +20,7 @@ RC(1,0) RC(1,1)
         compatible = "zmk,kscan-composite";
         label = "KSCAN";
         rows = <2>;
-        columns = <1>;
+        columns = <2q>;
 
         matrix1 {
             kscan = <&matrix1>;
@@ -50,3 +50,4 @@ RC(1,0) RC(1,1)
             ;
     };
 };
+qaqaqaqaqaqaqaqqqqqqqqqqqqqaqaqaqaqaqaqaqaqaqaqqqqqaqaqaqaqaqaqaqaqaqaqaqaqa
