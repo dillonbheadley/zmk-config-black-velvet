@@ -154,7 +154,7 @@
         &kp Z  &kp X  &kp C  &kp V  &kp B           &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
               &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &lt MACRO SPC
       >;
-      sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+      // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
 
 // dsthk v2
