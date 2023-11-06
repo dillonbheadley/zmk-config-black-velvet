@@ -147,6 +147,7 @@
 
   keymap {
     compatible = "zmk,keymap";
+
     default_layer {
       bindings = <
         &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
@@ -157,27 +158,7 @@
       // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
 
-// dsthk v2
-// alt_layer {
-//   bindings = <
-//     &kp B  &kp C  &kp Y  &kp F  &kp Q           &kp Z  &kp M  &kp QUOT  &kp X  &kp FSLH 
-//     &kp R  &kp S  &kp T  &kp H  &kp K           &kp V  &kp N  &kp I  &kp A  &kp O
-// &tlt MOUSE W  &kp G  &kp P  &kp D  &sk LGUI       &kp J  &kp L  &kp U  &kp CMMA  &kp DOT
-//                   &lt NAV E  &ml NUMB LSFT      &mo SYMB  &kp SPC
-//   >;
-// };
-
-// hands down gold
-//    alt_layer {
-//      bindings = <
-//        &kp J  &kp G  &kp M  &kp P  &kp V           &kp Z  &kp DOT  &kp QUOT  &kp Q  &kp FSLH 
-//        &kp R  &kp S  &kp N  &kp D  &kp B           &kp CMMA  &kp A  &kp E  &kp I  &kp H
-//  &tlt MOUSE X  &kp F  &kp L  &kp C  &kp W          &sk LGUI  &kp U  &kp O  &kp Y  &kp K
-//              &lt NAV T  &ml NUMB LSFT              &mo SYMB  &kp SPC
-//      >;
-//    };
-
-// engram
+    // engram
     alt_layer {
       bindings = <
         &kp B  &kp Y  &kp O  &kp U  &kp Z              &kp QUOT  &kp L  &kp D  &kp W  &kp V 
@@ -191,7 +172,7 @@
       bindings = <
         &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &the  &trans         &trans  &meh J  &meh K  &meh L  &meh P
-        &trans  &trans  &afn  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &afn  &trans  &trans         &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans       &trans  &trans
       >;
     };
@@ -207,10 +188,10 @@
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &sys_reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to ALTLAYOUT 
-        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to GAME         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
-        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &kp LC(MINUS)  &kp LG(RIGHT)  &kp DEL 
-                                        &trans  &trans          &mo MEDIA  &kp BKSP
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &sys_reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
+        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to GAME            &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
+        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP              &to DEFAULT  &kp LG(LEFT)  &kp LC(MINUS)  &kp LG(RIGHT)  &kp DEL 
+                                        &trans  &trans              &mo MEDIA  &kp BKSP
       >;
     };
       
@@ -219,7 +200,7 @@
         &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &sys_reset
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
-                                    &kp LGUI  &kp LSFT          &trans  &kp ENTER 
+                                    &kp LGUI  &kp LSFT          &trans  &mo MEDIA 
       >;
     };	
 
@@ -228,7 +209,7 @@
         &kp CAPS  &kp RALT  &key_repeat  &caps_word  &kp STAR       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
         &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp PLUS            &kp COLON  &kp N4  &kp N5  &kp N6  &kp ENTER 
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP              &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp DOT   
-                                        &mo MEDIA  &trans              &kp N0 &kp BKSP
+                                        &mo MEDIA  &trans           &kp N0 &kp BKSP
       >;
     };
 
@@ -236,7 +217,7 @@
       bindings = <
         &kp F1  &kp F2  &kp F3  &kp F4  &bt BT_CLR            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &to DEFAULT
         &kp F5  &kp F6  &kp F7  &kp F8  &bt BT_PRV            &kp C_BRI_DN  &kp LSFT  &kp LGUI  &kp LALT  &kp LCTL 
-        &kp F9  &kp F10  &kp F11  &kp F12  &bootloader        &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans   
+        &kp F9  &kp F10  &kp F11  &kp F12  &bootloader        &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &to ALTLAYOUT   
                                 &bt BT_SEL 0 &bt BT_NXT       &trans &kp BKSP
       >;
     };
@@ -250,5 +231,24 @@
     //   >;
     // };
 
+    // dsthk v2
+    // alt_layer {
+    //   bindings = <
+    //     &kp B  &kp C  &kp Y  &kp F  &kp Q           &kp Z  &kp M  &kp QUOT  &kp X  &kp FSLH 
+    //     &kp R  &kp S  &kp T  &kp H  &kp K           &kp V  &kp N  &kp I  &kp A  &kp O
+    // &tlt MOUSE W  &kp G  &kp P  &kp D  &sk LGUI       &kp J  &kp L  &kp U  &kp CMMA  &kp DOT
+    //                   &lt NAV E  &ml NUMB LSFT      &mo SYMB  &kp SPC
+    //   >;
+    // };
+    
+    // hands down gold
+    //    alt_layer {
+    //      bindings = <
+    //        &kp J  &kp G  &kp M  &kp P  &kp V           &kp Z  &kp DOT  &kp QUOT  &kp Q  &kp FSLH 
+    //        &kp R  &kp S  &kp N  &kp D  &kp B           &kp CMMA  &kp A  &kp E  &kp I  &kp H
+    //  &tlt MOUSE X  &kp F  &kp L  &kp C  &kp W          &sk LGUI  &kp U  &kp O  &kp Y  &kp K
+    //              &lt NAV T  &ml NUMB LSFT              &mo SYMB  &kp SPC
+    //      >;
+    //    };
   };
 };
